@@ -1,0 +1,45 @@
+.media(@break, @content){
+    @media screen and (max-width: @break){
+        @content();
+    }
+}
+
+.pseudo{
+    &:before,&:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.gradient(@color1, @color2){
+    background-image: linear-gradient(@color1, @color2);
+}
+
+.font(@alias, @name){
+    @font-face{
+        font-family: @alias;
+        src: url("../fonts/ @{name} .woff2") format("woff2"), url("../fonts/ @{name} .woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+}
+// to use:
+//.font(black, cytiapro-black-webfont)
+
+.gpu{
+    transform: translate3d(0, 0, 0)
+}
+
+.img(@image){
+    background-image: url%(@image);
+}

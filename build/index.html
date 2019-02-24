@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/app.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenLite.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+
+</head>
+
+<body>
+
+    <div data-sticky="12" class="button sticky_w">
+        <div class="button_text sticky_t">I'M JUST STICKY...</div>
+    </div>
+
+    <div data-sticky="5" class="button sticky_w">
+        <div class="button_text sticky_t">I'M MORE STICKY.</div>
+    </div>
+
+    <div data-sticky="2.5" class="button sticky_w">
+        <div class="button_text sticky_t">I'M ULTRA STICKY</div>
+    </div>
+
+    <div data-sticky="1" class="button sticky_w">
+        <div class="button_text sticky_t">I'M CRAZY! HELP!!</div>
+    </div>
+
+    <script src="js/sticker.js"></script>
+
+    <script>
+        
+        new Sticker({
+            inertion: 0.5,
+            spring: 0.5
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+@import '_common.less';
+@import '_fonts.less';
+@import '_layouts.less';
+@import '_modules';
+@import 'helpers/_all';
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,900');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button{
+    padding: 30px 60px;
+    border: 5px solid black;
+    transition: 0.2s ease;
+    margin-top: 50px;
+    cursor: pointer;
+    &_text{
+        font-family: Montserrat;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    &:hover{
+        background: #4affe4;
+    }
+
+    &:nth-of-type(2){
+        &:hover{
+            background: #ff44d0;
+        }
+    }
+    &:nth-of-type(3){
+        &:hover{
+            background: #fffb06;
+        }
+    }
+    &:nth-of-type(4){
+        &:hover{
+            background: #00ff73;
+        }
+    }
+}
+
+
