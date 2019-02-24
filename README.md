@@ -1,6 +1,7 @@
 # sticker
 Library to create funny sticky (parallax) hover effect.
 
+# [Examples](https://codepen.io/alexkorzin/pen/XOLxvL)
 
 ## Getting startd
 ### 1. Include `sticker.js` into your project:
